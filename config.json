@@ -3,5 +3,11 @@
     {
       "name": "CpuTemperature"
     }
+  ],
+  "comunications": [
+    {
+      "name": "telegram",
+      "default_answer":""
+    }
   ]
 }

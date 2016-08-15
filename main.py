@@ -50,7 +50,8 @@ def main():
     #myclass = getattr(_temp,'CpuTemperature')
     #myobject = myclass()
     myobject = loadModule(module['name'])
-    print(getattr(myobject,'getValue')())
+
+    print(getattr(myobject,myobject.getOperations()[0])())
 
 if __name__ == '__main__':
     main()
