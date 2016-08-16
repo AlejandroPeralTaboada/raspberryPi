@@ -9,3 +9,9 @@ class Properties:
             with open(self.file) as jsonFile:
                 self.data = json.load(jsonFile)
         return self.data['modules']
+
+    def getComunicators(self):
+        if (self.data == None):
+            with open(self.file) as jsonFile:
+                self.data = json.load(jsonFile)
+        return self.data['comunications']

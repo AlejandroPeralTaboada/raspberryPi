@@ -6,7 +6,7 @@
   ],
   "comunications": [
     {
-      "name": "telegram",
+      "name": "Telegram",
       "default_answer_id":""
     }
   ]
