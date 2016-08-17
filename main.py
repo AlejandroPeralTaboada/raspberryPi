@@ -1,6 +1,5 @@
 import os
 
-from comunications.Telegram import Telegram
 from properties.Properties import Properties
 from importlib import import_module
 from loader.MainLoader import MainLoader

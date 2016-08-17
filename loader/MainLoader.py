@@ -15,6 +15,8 @@ class MainLoader:
         comunicators = self.properties.getComunicators()
         for comunicator in comunicators:
             self.comunications.append(self.__loadModule('comunications',comunicator['name']))
+        for comunicator in self.comunications:
+            comunicator.addHandler(self.notify)
 
     def __loadModules(self):
         modules = self.properties.getModules()
@@ -27,6 +29,8 @@ class MainLoader:
         myclass = getattr(_temp, moduleName)
         return myclass()
 
+    def notify(self,msg):
+        print (msg)
 
 
 
