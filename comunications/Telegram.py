@@ -1,5 +1,8 @@
 import json
+
 import telepot
+
+
 class Telegram:
     def __init__(self):
         with open('configTelegram.json') as jsonFile:
@@ -11,7 +14,7 @@ class Telegram:
     def addHandler(self):
         self.bot.message_loop(self.handle)
 
-    def handle(self,msg):
+    def handle(self, msg):
         print(msg)
         content_type, chat_type, chat_id = telepot.glance(msg)
         if (msg['text'] == '/hola'):
@@ -21,5 +24,5 @@ class Telegram:
         if content_type == 'text':
             self.bot.sendMessage(chat_id, msg['text'])
 
-    def notifyDefault(self,msg):
-        self.bot.sendMessage(self.defalutChatId,msg)
+    def notifyDefault(self, msg):
+        self.bot.sendMessage(self.defalutChatId, msg)

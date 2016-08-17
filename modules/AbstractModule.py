@@ -1,8 +1,8 @@
-from abc import  ABCMeta,abstractmethod
+from abc import ABCMeta, abstractmethod
+
 
 class AbstractModule:
     __metaclass__ = ABCMeta
-
 
     @abstractmethod
     def getOperations(self):

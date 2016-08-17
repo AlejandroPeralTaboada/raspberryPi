@@ -7,7 +7,7 @@
   "comunications": [
     {
       "name": "Telegram",
-      "default_answer_id":""
+      "default_answer_id": ""
     }
   ]
 }

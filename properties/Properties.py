@@ -1,4 +1,6 @@
 import json
+
+
 class Properties:
     def __init__(self):
         self.file = 'config.json'
